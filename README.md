@@ -6,10 +6,17 @@ Resources - list any sources you consulted to create your visualization
 
 ***
 
-Data Source:
+Data Source:  
 https://www.kaggle.com/rtatman/did-it-rain-in-seattle-19482017
 
-Information about data:
+Information about data:  
+This dataset contains weather information for 25,551 consecutive days spanning from 1948 to 2017 collected at the Seattle-Tacoma International Airport (SeaTac, Washington, U.S., just south of Seattle). This data is meant as a proxy for weather in Seattle.
 
+Columns:
+    DATE = the date of the observation in the format (Year-Month-Day)
+    PRCP = the amount of precipitation, in inches (decimal)
+    TMAX = the maximum temperature for that day, in degrees Fahrenheit
+    TMIN = the minimum temperature for that day, in degrees Fahrenheit
+    RAIN = TRUE if rain was observed on that day, FALSE if it was not
 
 Coding references:
