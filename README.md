@@ -20,3 +20,6 @@ Columns:
     RAIN = TRUE if rain was observed on that day, FALSE if it was not
 
 Coding references:
+http://seaborn.pydata.org/generated/seaborn.tsplot.html
+https://seaborn.pydata.org/generated/seaborn.countplot.html
+https://pandas.pydata.org/pandas-docs/stable/index.html
