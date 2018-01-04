@@ -133,3 +133,8 @@ mean_rain_df = pd.DataFrame(data_list)
 mean_rain_plot = sns.barplot(x="month", y="mean_num_days", hue="rain", 
                              data=mean_rain_df)
 mean_rain_plot.figure.set_size_inches(10,6)
+
+
+# Export data as csv file
+mean_rain_df.to_csv("data/mean_rain_days.csv", index=False, 
+                    columns=["month", "rain", "mean_num_days"])
