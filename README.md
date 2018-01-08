@@ -28,3 +28,4 @@ https://stackoverflow.com/questions/25478673/add-colors-to-dimple-js-bar-chart-b
 https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.chart
 https://developer.mozilla.org/
 https://stackoverflow.com/questions/23291200/dimple-js-how-can-i-change-the-labels-of-a-chart-axis-without-changing-the-data
+https://stackoverflow.com/questions/30090642/customizing-colors-on-dimple-js-charts

@@ -42,6 +42,10 @@ function drawBarplot(csvData) {
   // Customize chart
   var chartLegend = myChart.addLegend(450, 10, 510, 20, "right");
   chartLegend.fontSize = "14px";
+  myChart.defaultColors = [
+    new dimple.color("orange"),
+    new dimple.color("blue")
+  ];
   myChart.draw();
 }
 
