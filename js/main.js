@@ -30,10 +30,14 @@ function drawBarplot(csvData) {
   var myChart = new dimple.chart(svg, csvData);
   myChart.setBounds(60, 30, width - 100, height - 100)
   var x = myChart.addCategoryAxis("x", "month");
+  x.title = "Month";
+  x.fontSize = "12px";
   x.addOrderRule(["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November",
                   "December"]);
-  myChart.addMeasureAxis("y", "mean_num_days");
+  var y = myChart.addMeasureAxis("y", "mean_num_days");
+  y.title = "Number of Days";
+  y.fontSize = "12px";
   myChart.addSeries("rain", dimple.plot.bar);
   // Customize chart
   var chartLegend = myChart.addLegend(450, 10, 510, 20, "right");
