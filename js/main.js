@@ -27,7 +27,9 @@ function drawBarplot(csvData) {
                   "December"]);
   myChart.addMeasureAxis("y", "mean_num_days");
   myChart.addSeries("rain", dimple.plot.bar);
-  myChart.addLegend(60, 10, 510, 20, "right");
+  // Customize chart
+  var chartLegend = myChart.addLegend(450, 10, 510, 20, "right");
+  chartLegend.fontSize = "14px";
   myChart.draw();
 }
 
