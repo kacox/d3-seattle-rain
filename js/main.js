@@ -1,7 +1,15 @@
 // Create title
 d3.select("body")
+  .append("div")
+  .attr("id", "title")
+  .style("padding", "0px 0px 0px 140px")
   .append("h2")
-  .text("Mean Number of Days With or Without Rain in Seattle");
+  .text("Mean Number of Days With or Without Rain in Seattle")
+  .append("p")
+  .text("1948 to 2017")
+  .style("font-size", "medium")
+  .style("padding", "0px 0px 0px 320px");
+
 
 // Create svg element that will contain chart
 var width = 1000;

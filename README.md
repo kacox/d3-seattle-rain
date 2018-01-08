@@ -26,3 +26,4 @@ https://pandas.pydata.org/pandas-docs/stable/index.html
 http://dimplejs.org/examples_viewer.html?id=bars_vertical_stacked
 https://stackoverflow.com/questions/25478673/add-colors-to-dimple-js-bar-chart-based-on-value-and-add-goal-line
 https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.chart
+https://developer.mozilla.org/
