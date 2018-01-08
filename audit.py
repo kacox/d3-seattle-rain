@@ -115,12 +115,12 @@ for (month, group) in weather_df.groupby("MONTH"):
     
     # True entry for given month
     true_dict["month"] = month_name
-    true_dict["rain"] = True
+    true_dict["rain"] = "Rain"
     true_dict["mean_num_days"] = round(true_count/70.0)
     
     # False entry for given month
     false_dict["month"] = month_name
-    false_dict["rain"] = False
+    false_dict["rain"] = "No Rain"
     false_dict["mean_num_days"] = round(false_count/70.0)
     
     # Add True and False entries to data_list

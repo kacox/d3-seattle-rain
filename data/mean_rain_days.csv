@@ -1,25 +1,25 @@
 month,rain,mean_num_days
-January,True,19.0
-January,False,12.0
-February,True,16.0
-February,False,13.0
-March,True,17.0
-March,False,14.0
-April,True,14.0
-April,False,16.0
-May,True,11.0
-May,False,20.0
-June,True,9.0
-June,False,21.0
-July,True,5.0
-July,False,26.0
-August,True,6.0
-August,False,25.0
-September,True,9.0
-September,False,21.0
-October,True,14.0
-October,False,17.0
-November,True,18.0
-November,False,12.0
-December,True,19.0
-December,False,12.0
+January,Rain,19.0
+January,No Rain,12.0
+February,Rain,16.0
+February,No Rain,13.0
+March,Rain,17.0
+March,No Rain,14.0
+April,Rain,14.0
+April,No Rain,16.0
+May,Rain,11.0
+May,No Rain,20.0
+June,Rain,9.0
+June,No Rain,21.0
+July,Rain,5.0
+July,No Rain,26.0
+August,Rain,6.0
+August,No Rain,25.0
+September,Rain,9.0
+September,No Rain,21.0
+October,Rain,14.0
+October,No Rain,17.0
+November,Rain,18.0
+November,No Rain,12.0
+December,Rain,19.0
+December,No Rain,12.0
