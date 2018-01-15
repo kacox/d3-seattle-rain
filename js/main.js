@@ -24,30 +24,66 @@ var svg = d3.select("body")
 
 // Callback function to draw the barplot
 function drawBarplot(csvData) {
-  debugger;
 
   // Dimple.js chart code
   var myChart = new dimple.chart(svg, csvData);
   myChart.setBounds(60, 30, width - 100, height - 100)
-  var x = myChart.addCategoryAxis("x", "month");
+
+  // Create x axis
+  var x = myChart.addCategoryAxis("x", ["month", "rain"]);
   x.title = "Month";
   x.fontSize = "12px";
   x.addOrderRule(["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November",
                   "December"]);
+
+  // Create y axis
   var y = myChart.addMeasureAxis("y", "mean_num_days");
   y.title = "Number of Days";
   y.fontSize = "12px";
-  myChart.addSeries("rain", dimple.plot.bar);
+
+  // Tie 2 or more axes together and render a graphic
+  var chartSeries = myChart.addSeries("rain", dimple.plot.bar);
+
+  // Override default mouse on and mouse off behavior
+  chartSeries.addEventHandler("mouseover", mouseOn);
+  chartSeries.addEventHandler("mouseleave", mouseOff);
+
   // Customize chart
+  chartSeries.barGap = 0.3;
   var chartLegend = myChart.addLegend(450, 10, 510, 20, "right");
   chartLegend.fontSize = "14px";
   myChart.defaultColors = [
     new dimple.color("orange"),
     new dimple.color("blue")
   ];
+
+  // Draw
   myChart.draw();
+
+  // Custom event handlers (functions)
+  function mouseOn(evn) {
+
+    // Get location of event
+    var xEvent = parseFloat(evn.selectedShape.attr("x"));
+    var yEvent = parseFloat(evn.selectedShape.attr("y"));
+
+    infobox = svg.append("g");
+    infobox.append("text")
+            .attr("x", xEvent - 1)
+            .attr("y", yEvent - 6)
+            .text(evn.yValue)
+            .style("font-size", "20px")
+            .style("font-weight", "bold");
+  }
+
+  function mouseOff(evn2) {
+    if (infobox !== null) {
+      infobox.remove();
+    }
+  }
+
 }
 
-// Load data and draw
+// MAIN: Load data and draw
 d3.csv("data/mean_rain_days.csv", drawBarplot)

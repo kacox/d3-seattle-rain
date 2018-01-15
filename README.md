@@ -13,11 +13,14 @@ International Airport (SeaTac, Washington, U.S., just south of Seattle).
 
 
 ## Design
-Initially I thought of using a bar chart with two adjacent bars per month, one
-representing the number of rain days and the other the number of non-rain days.
-I instead decided that a stacked bar chart would be more effective at
-emphasizing the proportion rather than absolute number of days. It is clear
-that summer months have more days without rain using this design.
+I considered two different types of bar plots when developing this
+visualization. I initially thought of using a bar chart with two grouped bars
+per month, one representing the number of rain days and the other the number
+of non-rain days. For my first visualization draft I instead made a
+stacked bar chart. I thought that would be more effective at emphasizing the
+proportion rather than absolute number of days. My first feedback volunteer
+was not impressed by the stacked bar chart, so I reverted to my original
+design idea.
 
 
 ## Feedback
@@ -48,6 +51,7 @@ https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.chart
 https://developer.mozilla.org/  
 https://stackoverflow.com/questions/23291200/dimple-js-how-can-i-change-the-labels-of-a-chart-axis-without-changing-the-data  
 https://stackoverflow.com/questions/30090642/customizing-colors-on-dimple-js-charts  
+http://annapawlicka.com/pretty-charts-with-dimple-js/  
 
 
 ## Data Source:  
