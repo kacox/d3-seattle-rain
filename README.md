@@ -41,6 +41,32 @@ _Suggestions:_
 I'm not convinced that a stacked bar chart is better than a side by side bar
 chart.
 
+**Feedback #2**  
+_What do you notice in the visualization?_  
+We notice that there's a clear trend between the time of the month and how
+much rain we see in Seattle.
+
+_What questions do you have about the data?_  
+Based on the visualization alone, it's hard to know, what constitutes a rainy
+day? I assume it's likely based on the amount of precipitation in a day.
+
+I'm also interested in knowing what the original dataset looks like and how
+many data points do we have in a day.
+
+_What relationships do you notice?_  
+We notice that Seattle sees more rain in winter months as compared to summer.
+
+_What do you think is the main takeaway from this visualization?_  
+That we see more rain in winter as compared to summer
+
+_Is there something you don’t understand in the graphic?_  
+No, the visualization is quite clear.
+
+_Suggestions:_  
+Give more details on what the dataset looks like and how many data points are
+present in a day.
+
+Indicate what classifies as a rainy vs non-rainy day.
 
 ## Resources
 http://seaborn.pydata.org/  
