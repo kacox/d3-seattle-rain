@@ -4,12 +4,7 @@ d3.select("body")
   .attr("id", "title")
   .style("padding", "0px 0px 0px 140px")
   .append("h2")
-  .text("Mean Number of Days With or Without Rain in Seattle")
-  .append("p")
-  .text("1948 to 2017")
-  .style("font-size", "medium")
-  .style("padding", "0px 0px 0px 320px");
-
+  .text("Mean Number of Days With or Without Rain in Seattle");
 
 // Create svg element that will contain chart
 var width = 1000;
@@ -21,6 +16,23 @@ var svg = d3.select("body")
             .attr("height", height)
             .append("g")
             .attr("class", "barplot");
+
+// Create footer with addn'l information
+d3.select("body")
+  .append("div")
+  .attr("id", "footer")
+  .attr("width", width)
+  .append("p")
+  .style("font-size", "small")
+  .text("**original dataset contains weather information for 25,551 " +
+        "consecutive days spanning from 1948 to 2017")
+  .append("p")
+  .style("font-size", "small")
+  .text("**each day in the original dataset has only one data point")
+  .append("p")
+  .style("font-size", "small")
+  .text("**a rain day is any day with precipitation more than 0.00 inches");
+
 
 // Callback function to draw the barplot
 function drawBarplot(csvData) {
