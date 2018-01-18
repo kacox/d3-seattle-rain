@@ -68,6 +68,34 @@ present in a day.
 
 Indicate what classifies as a rainy vs non-rainy day.
 
+**Feedback #3**  
+_What do you notice in the visualization?_  
+From what I observe, this visualization communicates the number of days it
+rained and it didn't every month in the city of Seattle. The relationship
+between the month and the number of days it rained/didn't is pretty clear to
+me.
+
+_What questions do you have about the data?_   
+One question I would have or something which would have been a good addition
+would be seeing a deeper reveal of information on interaction. It could maybe
+highlight the day it rained the most in the active (on hover) bar and the day
+it rained the least. There could also be potential use of color to distinguish
+between the active bar in contrast with the other bars in the chart. This
+would add another layer to this visualization.
+
+_Is there something you don’t understand in the graphic?_   
+There is nothing that I don't understand in the graphic except maybe the
+number appearing at the top of the bar on interaction. It took me a few
+seconds to understand that given it seems a little repetitive and
+unnecessary as the y axis scale is small enough to gauge the exact number of
+days by looking at the level of the bar. This interaction could instead be
+used an excellent opportunity to add a third level of information to the graph
+as mentioned earlier.
+
+Overall, I think the visualization is effective and does a great job of
+communicating the relationship between the average number of days it rained
+during the time frame of an year in Seattle between 1948 - 2017.
+
 ## Resources
 http://seaborn.pydata.org/  
 https://pandas.pydata.org/pandas-docs/stable/index.html  
