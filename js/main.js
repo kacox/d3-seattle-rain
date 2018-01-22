@@ -76,10 +76,15 @@ function drawBarplot(csvData) {
   // Custom event handlers (functions)
   function mouseOn(evn) {
 
+    // Highlight selected bar
+    evn.selectedShape.attr("fill-opacity", "0.6")
+                      .attr("stroke-opacity", "0.6");
+
     // Get location of event
     var xEvent = parseFloat(evn.selectedShape.attr("x"));
     var yEvent = parseFloat(evn.selectedShape.attr("y"));
 
+    // Create info above bar
     infobox = svg.append("g");
     infobox.append("text")
             .attr("x", xEvent - 1)
@@ -90,6 +95,11 @@ function drawBarplot(csvData) {
   }
 
   function mouseOff(evn2) {
+    // Remove bar highlight
+    evn2.selectedShape.attr("fill-opacity", "1.0")
+                      .attr("stroke-opacity", "1.0");
+
+    // Clear info above bar
     if (infobox !== null) {
       infobox.remove();
     }
