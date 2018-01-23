@@ -1,25 +1,25 @@
-month,rain,mean_num_days
-January,Rain,19.0
-January,No Rain,12.0
-February,Rain,16.0
-February,No Rain,13.0
-March,Rain,17.0
-March,No Rain,14.0
-April,Rain,14.0
-April,No Rain,16.0
-May,Rain,11.0
-May,No Rain,20.0
-June,Rain,9.0
-June,No Rain,21.0
-July,Rain,5.0
-July,No Rain,26.0
-August,Rain,6.0
-August,No Rain,25.0
-September,Rain,9.0
-September,No Rain,21.0
-October,Rain,14.0
-October,No Rain,17.0
-November,Rain,18.0
-November,No Rain,12.0
-December,Rain,19.0
-December,No Rain,12.0
+month,rain,mean_num_days,max_date,max_prcp
+January,Rain,19.0,1986,2.98
+January,No Rain,12.0,Many,0.0
+February,Rain,16.0,1996,3.06
+February,No Rain,13.0,Many,0.0
+March,Rain,17.0,1972,2.7
+March,No Rain,14.0,Many,0.0
+April,Rain,14.0,1991,2.64
+April,No Rain,16.0,Many,0.0
+May,Rain,11.0,1969,1.83
+May,No Rain,20.0,Many,0.0
+June,Rain,9.0,1968,1.75
+June,No Rain,21.0,Many,0.0
+July,Rain,5.0,1981,0.85
+July,No Rain,26.0,Many,0.0
+August,Rain,6.0,1975,1.63
+August,No Rain,25.0,Many,0.0
+September,Rain,9.0,2013,1.71
+September,No Rain,21.0,Many,0.0
+October,Rain,14.0,2003,5.02
+October,No Rain,17.0,Many,0.0
+November,Rain,18.0,1959,3.41
+November,No Rain,12.0,Many,0.0
+December,Rain,19.0,2007,3.77
+December,No Rain,12.0,Many,0.0

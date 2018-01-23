@@ -102,6 +102,9 @@ for (month, group) in weather_df.groupby("MONTH"):
     true_count, false_count = 0, 0
     true_dict = {}
     false_dict = {}
+
+    max_month_prcp = max(group['PRCP'])
+    max_day = group[group['PRCP'] == max_month_prcp].iloc[0]
     
     # Build True and False counts
     for rain_bool in group["RAIN"]:
@@ -117,11 +120,15 @@ for (month, group) in weather_df.groupby("MONTH"):
     true_dict["month"] = month_name
     true_dict["rain"] = "Rain"
     true_dict["mean_num_days"] = round(true_count/70.0)
+    true_dict["max_date"] = max_day["YEAR"]
+    true_dict["max_prcp"] = max_day["PRCP"]
     
     # False entry for given month
     false_dict["month"] = month_name
     false_dict["rain"] = "No Rain"
     false_dict["mean_num_days"] = round(false_count/70.0)
+    false_dict["max_date"] = "Many"
+    false_dict["max_prcp"] = 0.0
     
     # Add True and False entries to data_list
     data_list.append(true_dict)
@@ -137,4 +144,5 @@ mean_rain_plot.figure.set_size_inches(10,6)
 
 # Export data as csv file
 mean_rain_df.to_csv("data/mean_rain_days.csv", index=False, 
-                    columns=["month", "rain", "mean_num_days"])
+                    columns=["month", "rain", "mean_num_days", "max_date", 
+                             "max_prcp"])

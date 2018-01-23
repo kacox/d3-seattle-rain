@@ -106,6 +106,7 @@ https://developer.mozilla.org/
 https://stackoverflow.com/questions/23291200/dimple-js-how-can-i-change-the-labels-of-a-chart-axis-without-changing-the-data  
 https://stackoverflow.com/questions/30090642/customizing-colors-on-dimple-js-charts  
 http://annapawlicka.com/pretty-charts-with-dimple-js/  
+https://stackoverflow.com/questions/36314656/selecting-a-section-of-data-from-csv-in-d3-js
 
 
 ## Data Source:  

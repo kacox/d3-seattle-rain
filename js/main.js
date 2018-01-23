@@ -80,20 +80,46 @@ function drawBarplot(csvData) {
     evn.selectedShape.attr("fill-opacity", "0.6")
                       .attr("stroke-opacity", "0.6");
 
+    // Get max precipitation and date for a given month
+    function filterCriteria(d) {
+      if (d.month === evn.xValue) {
+        if (d.rain == evn.seriesValue) {
+          return d;
+        }
+      }
+    }
+
+    var eventData = csvData.filter(filterCriteria);
+
+
     // Get location of event
     var xEvent = parseFloat(evn.selectedShape.attr("x"));
     var yEvent = parseFloat(evn.selectedShape.attr("y"));
 
-    // Create info above bar
+    // Create infobox
     infobox = svg.append("g");
+
+    // Create box for infobox
+    infobox.append("rect")
+          .attr("x", xEvent - 40)
+          .attr("y", yEvent - 28)
+          .attr("width", 114)
+          .attr("height", 24)
+          .attr("rx", 5)
+          .attr("ry", 5)
+          .style("fill", "white")
+          .style("stroke", "black")
+          .style("stroke-width", 1.5);
+
+    // Create text for infobox
     infobox.append("text")
-            .attr("x", xEvent - 1)
-            .attr("y", yEvent - 6)
-            .text(evn.yValue)
-            .style("font-size", "20px")
-            .style("font-weight", "bold");
+            .attr("x", xEvent - 36)
+            .attr("y", yEvent - 10)
+            .text(eventData[0].max_date + "; " + eventData[0].max_prcp + " in")
+            .style("font-size", "16px");
   }
 
+  // Mouse off behavior
   function mouseOff(evn2) {
     // Remove bar highlight
     evn2.selectedShape.attr("fill-opacity", "1.0")
