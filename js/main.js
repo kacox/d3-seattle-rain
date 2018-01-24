@@ -107,9 +107,9 @@ function drawBarplot(csvData) {
 
     // Create box for infobox
     infobox.append("rect")
-          .attr("x", xEvent - 40)
+          .attr("x", xEvent - 3)
           .attr("y", yEvent - 28)
-          .attr("width", 114)
+          .attr("width", 30)
           .attr("height", 24)
           .attr("rx", 5)
           .attr("ry", 5)
@@ -119,9 +119,9 @@ function drawBarplot(csvData) {
 
     // Create text for infobox
     infobox.append("text")
-            .attr("x", xEvent - 36)
+            .attr("x", xEvent + 1)
             .attr("y", yEvent - 10)
-            .text(eventData[0].max_date + "; " + eventData[0].max_prcp + " in")
+            .text(eventData[0].mean_num_days.replace(".0", ""))
             .style("font-size", "16px");
   }
 
