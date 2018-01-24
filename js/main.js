@@ -2,9 +2,15 @@
 d3.select("body")
   .append("div")
   .attr("id", "title")
-  .style("padding", "0px 0px 0px 140px")
-  .append("h2")
+  .style("padding", "0px 0px 0px 20px")
+  .append("h1")
   .text("Mean Number of Days With or Without Rain in Seattle");
+
+// Subtitle for context
+d3.select("div")
+  .append("p")
+  .text("Based on data ranging from 1948 to 2017, summer months typically" +
+        " experience less rain than winter months.");
 
 // Create svg element that will contain chart
 var width = 1000;
