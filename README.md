@@ -22,6 +22,24 @@ proportion rather than absolute number of days. My first feedback volunteer
 was not impressed by the stacked bar chart, so I reverted to my original
 design idea.
 
+By suggestion from my second feedback volunteer, I added footers to give more
+information about the data, e.g. what counts as a rainy day.
+
+Substantial design changes occurred after my third round of feedback. My
+feedback giver suggested making bars appear highlighted when hovered over,
+rather than only having a tooltip appear. This change greatly improved the
+feel of my visualization.
+
+The tooltip went through multiple changes as the project progressed. Initially
+I had overridden the default with simple text above the bars representing
+the y value of that bar. The third commenter's ideas got me thinking about
+including a third layer of information. I tried that, but found that it didn't
+add anything but confusion. Something good that came of that exploration,
+however, was making a box with a solid background color to enclose the 
+desired hover information. This was better than simply having plain text. The
+final tooltip, then, was a hybrid: the y value of a given bar contained
+within a framed, white-background box.
+
 
 ## Feedback
 **Feedback #1**  
